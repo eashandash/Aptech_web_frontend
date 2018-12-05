@@ -1,0 +1,98 @@
+HTML 4.01 - 5 - Frame of Web Page
+CSS 2.0 - 3 - Designer Layer
+JavaScript 1.7 - 2.0 - Scripting Language
+Browser
+Java - Programming Lanaguage
+JavaScript - Scripting Language
+
+1. Static
+2. Dynamic 
+
+Strictly typed language
+case sensitive
+
+data types
+
+int	integer-whole number
+float	floating - decimal numbers
+char	character - single character/special symbol
+double 	double floating - large size of float values
+String	group of characters/words/sentences
+Boolean	true/false
+
+var - keyword to represent data types
+
+Variables
+- can consist of a-z, A-Z, 0-9
+- cannot use reserved words 
+- can be alpha-numeric but not numeric-alpha
+- cannot use space, special symbols except underscore_
+- is case sensitive
+
+operators
+assigment		=, +=, -=, *=
+arithmetic		+, -, *, /, %, ++, --
+logical		&&, ||, !
+relational		==, !=, <, >, <=, >=
+
+output statements
+1. write(), writeln() - display on web page (needs internal object - document/window)
+2. alert() - pop up with ok button
+3. confirm() - pop up with ok and cancel button/input- yes/no
+
+input
+1.
+prompt() - as for input
+prompt("heading statement");
+prompt("heading statement","input instruction/default value");
+prompt receives input in String form by default
+
+parseInt() - converts string into integer/whole number
+parseFloat() - converts string into float/decimal number
+
+2. form elements
+<input type="text"/>
+-----------------------------------------
+implementation of JavaScript
+1. internal
+<head>	
+	<script> java scrpt coding </script>
+</head>
+2. external
+<head>
+	<script src="path of file.js"> </script>
+</head>
+
+--------------------------------------
+Programming Principles and Techniques
+1. statements
+	a. if-else
+	b. switch-case
+	c. ternary oprator
+2. loops
+	a.while
+	b.for
+	c.do-while
+	d. for-each(array)
+		Syntax:
+			arrayVariable[10];
+			for(datatype variable : arrayVariable)//condition not required
+			{
+			statement(variable); //iteration not required
+			}
+
+arrayVariable.length
+3. arrays
+	a. single D - array()
+ 	b. multi D array(array(), array() )
+4. functions(user defined)
+	a. without return types
+	b. with return types
+
+function functionName(paramenters,...)
+{
+
+return value;
+}
+
+NaN - Not a Number

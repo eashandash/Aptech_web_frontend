@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>fb login page</title>
+	<style type="text/css">
+	#container
+	{
+		width: 1510px;
+		height: 500px;
+		margin:0 auto;
+	}	
+	header
+	{
+		background-color: #3b5998;
+		width: 1510px;
+		height: 75px;
+		margin:0 auto;
+		margin-top: -10px;
+	}
+	#facebookname
+	{
+		float:left;
+
+		width: 700px;
+		height: 90px;
+		text-align: center;
+
+	}
+
+	#login
+	{
+		float:right;
+
+		width: 700px;
+		height: 90px;
+		text-align: center;
+
+	}
+	#button1
+	{
+		background-color:rgb(94,125,172);
+		border-color: rgb(94,125,172);
+
+	}
+	#one
+	{
+		margin-top: 5px;
+		width: 1510px;
+		height: 100px;
+		margin:0 auto;
+		background-color: rgb(245,246,250);
+
+	}
+	#oneleft
+	{
+		margin-top: 15px;
+		float:left;
+		width: 700px;
+		height: 90px;
+		text-align: center;
+		margin-left:80px; 
+
+
+	}
+
+	#oneright
+	{
+		margin-top: 15px;
+		float:right;
+		width: 700px;
+		height: 90px;
+	
+	}
+
+	#two
+	{
+		width: 1510px;
+		height: 205px;
+		margin:0 auto;
+		
+		background-color: rgb(241,243,248);
+
+	}
+	#twoleft
+	{
+		margin-top:-5px; 
+		float:left;
+		width: 700px;
+		height: 200px;
+		text-align: center;
+		margin-left:120px; 
+	}
+	#fname
+	{
+		margin-top:0px; 
+		width: 180px;
+		height: 38px;
+		border-radius: 7px;
+		
+		
+	}
+	#sname
+	{
+		margin-left:6px;
+		margin-top:0px;
+		width: 180px;
+		height: 38px;
+		border-radius: 6px;
+	}
+		
+	#email
+	{
+		margin-top:10px;
+		width: 374px;
+		height: 38px;
+		border-radius: 6px;
+		
+	}
+	#pass
+	{
+		margin-top:10px;
+		width: 374px;
+		height: 38px;
+		border-radius: 6px;
+		
+	}
+	#three
+	{
+		width: 1510px;
+		height: 130px;
+		margin:0 auto;
+		
+		background-color: rgb(240,240,245);
+
+	}
+	#threeleft
+	{
+		float:left;
+		width: 700px;
+		height: 130px;
+	}
+	#threeright
+	{
+		margin-left: 10px;
+		float:right;
+		width: 700px;
+		height: 130px;
+	}
+	#day
+	{
+		width: 62px;
+		height: 37px;
+	}
+	#month
+	{
+		width: 62px;
+		height: 37px;
+
+	}
+	#year
+	{
+		width: 62px;
+		height: 37px;
+
+	}
+	#female
+	{
+		width: 35px;
+		height: 17px;
+	}
+	#male
+	{
+		width: 35px;
+		height: 17px;
+	}
+	#four
+	{
+		margin-top: -10px;
+		width: 1510px;
+		height: 75px;
+		margin:0 auto;
+		background-color: rgb(237,236,241);
+		
+		
+
+	}
+	#fourleft
+	{
+		float:left;
+		width: 700px;
+		height: 75px;
+	}
+	#fourright
+	{
+		margin-left: 10px;
+		float:right;
+		width: 700px;
+		height: 75px;
+	}
+	#five
+	{
+		margin-top: -10px;
+		width: 1510px;
+		height: 105px;
+		margin:0 auto;
+		background-color: rgb(237,236,241);
+		
+		
+
+	}
+	#fiveleft
+	{
+		float:left;
+		width: 700px;
+		height: 105px;
+	}
+	#fiveright
+	{
+		margin-left: 10px;
+		float:right;
+		width: 700px;
+		height: 105px;
+	}
+	#createaccount
+	{
+		margin-top: 10px;
+		background-color: rgb(104,165,72);
+		width: 200px;
+		height: 35px;
+		border-radius: 10px;
+	}
+	#six
+	{
+		
+		width: 1510px;
+		height: 50px;
+		margin:0 auto;
+		background-color: white;
+		
+
+	}
+	#sixright
+	{
+		width: 1010px;
+		height: 50px;
+		float:right;
+		margin-right: 250px;
+
+	}
+	#plus
+	{
+		width: 30px;
+		margin-left: 10px;
+	}
+	#seven
+	{
+		width: 1510px;
+		height: 150px;
+		margin:0 auto;
+		background-color: white;
+
+	}
+	#sevenright
+	{
+		width: 1010px;
+		height: 50px;
+		float:right;
+		margin-right: 250px;
+
+	}
+	a:hover
+        {
+
+          color:  #3b5998;
+          text-decoration: underline;
+          
+          
+
+        }
+
+     a:visited
+        {
+        	color:grey;
+        	text-decoration: none;
+
+        }
+		
+
+
+
+
+
+	</style>
+
+
+
+	<script type="text/javascript">
+
+	function validatefname() 
+	{
+
+
+        var x = document.forms["formname"].fname.value;
+        if(x=="")
+         {
+          alert("First name cannot be left blank.");
+          
+        }
+      }
+      
+       
+
+
+
+
+
+
+
+
+	</script>
+
+
+
+
+
+
+
+	
+
+
+
+
+
+</head>
+<body>
+	<header>
+		<div id="facebookname">
+			<font face="Tahoma" size="9em" color="white"><b>facebook</b></font>
+			
+		</div>
+
+		<div id="login">
+	
+		<table>
+			<tr>
+			<th><font color="white">Email or Phone</font></th>
+			<th width="3px"></th>
+			
+			<th><font color="white">Password</font></th>
+			<th width="3px"></th>
+
+			<th></th>
+			</tr>
+
+
+			<tr>
+			<th><input type="text" placeholder="Email"></th>
+			<th></th>
+			
+			<th><input type="Password" placeholder="************"></th>
+			<th></th>
+			
+			<th><input type="submit" value="Log In" style="color: white ; font-size: small;"  id="button1"></th>
+			</tr>
+
+			<tr>
+			<th></th>
+			<th></th>
+			<th><font color="#b3b3cc">Forgotten account ?</font></th>
+			<th></th>
+			<th></th>
+			</tr>
+
+
+
+
+
+
+
+		</table>
+	</div>
+		
+
+
+	</header>
+
+
+
+
+
+	<body>
+
+	<form name="formname">
+		
+	
+
+
+
+
+
+	<div id="one">
+		<div id="oneleft">
+		<font color=" #001a66" size="5px"><b>
+		Facebook helps you connect and share with the <br/>
+		people in your life.</b></font>
+		</div>
+
+
+		<div id="oneright">
+		<font face="Tahoma" color="#333333" size="6px"><b>
+		Create an account<br/></b></font>
+		<font face="Tahoma" color="#333333" size="4px">It's free and always will be.</font>
+		</div>
+	</div>
+
+
+	<div id="two">
+		<div id="twoleft">
+			<img src="fbfinal.png" width="560px">
+		</div>
+
+		<div id="tworight">
+			<table>
+				<tr>
+					<th><input type="text" placeholder="   First Name" id="fname" name="fname"  onblur="validatefname();"></th>
+					<th><input type="text" placeholder="   Sur Name" id="sname"></th>
+				</tr>
+
+			</table>
+
+			<table>
+				<tr>
+					<th><input type="text" placeholder="   Mobile number or Email Address" id="email"></th>
+				</tr>
+				<tr>
+					<th><input type="text" placeholder="   New password" id="pass"></th>
+				</tr>	
+
+			</table>
+
+
+
+
+
+
+		</div>
+
+	</div>
+
+
+	<div id="three">
+		<div id="threeleft">
+		</div>
+
+		<div id="threeright">
+			<font face="Tahoma" color="black" size="5px">
+			Birthday<br/></font>
+
+
+
+			<table>
+
+			<tr>
+	 	 
+	 	 <th><select id="day"  name="date">
+	 	 <option>Day</option>
+	 	<option>1</option>
+	 	<option>2</option>
+	 	<option>3</option>
+	 	<option>4</option>
+	 	<option>5</option>
+	 	<option>6</option>
+	 	<option>7</option>
+	 	<option>8</option>
+	 	<option>9</option>
+	 	<option>10</option>
+	 </select></th>
+
+	 <th>
+	 <select  id="month"  name="month">
+	 	<option>Month</option>
+	 	<option>jan</option>
+	 	<option>feb</option>
+	 	<option>mar</option>
+	 	<option>apr</option>
+	 	<option>may</option>
+	 	<option>jun</option>
+	 	<option>jul</option>
+	 	<option>aug</option>
+	 	<option>sep</option>
+	 	<option>oct</option>
+	 	<option>nov</option>
+	 	<option>dec</option>
+
+	 </select></th>
+	 	
+
+	 	 <th>
+	 	 <select  id="year"   name="year">
+	 	 <option>Year</option>
+	 	<option>2001</option>
+	 	<option>2002</option>
+	 	<option>2003</option>
+	 	<option>2004</option>
+	 	<option>2005</option>
+	 	<option>2006</option>
+	 	<option>2007</option>
+	 	<option>2008</option>
+	 	<option>2009</option>
+	 	<option>2010</option>
+	 	<option>2011</option>
+	 	<option>2012</option>
+
+	 </select></th>
+
+	 <th style="color:#3b5998;font-size:10pt;text-align: left;"> Why do I need to provide my <br/>date of birth?</font></th>
+
+	 </tr>
+
+	 </table><br/>
+
+	 <input type="radio" id="female" name="male"/>Female  <input type="radio" id="male" name="male"/>Male
+
+
+	</div>
+
+	</div>
+
+
+		<div id="four">
+			<div id="fourleft">
+			</div>
+
+			<div id="fourright">
+				<font size="2px" color="#737373" face="verdana">
+				By clicking Create an account, you agree to our <br/>Terms and confirm that you have read our Data Policy, including our <br/>Cookie Use Policy. You may receive SMS message <br/>notifications from Facebook and can opt out at any time.
+				</font>
+			</div>
+
+
+		</div>
+
+
+
+		<div id="five">
+			<div id="fiveleft">
+			</div>
+
+			<div id="fiveright">
+			<input type="submit" id="createaccount" value="Create an account"  style="color: white ; font-size: large;">
+			<br/></br>
+
+			<font size="2px"  color="#3b5998" face="verdana"> <b> Create a Page</b></font><font face="verdana" size="2px"  color="#5c5c8a"><b> for a celebrity, band or business.</b></font>
+
+
+
+
+			</div>
+		</div>
+
+
+
+
+
+	</div>
+
+
+
+ 	<div id="foother">
+ 		<div id="six">
+ 		<div id="sixright">
+ 			<!--<font size="2px" color="grey">
+ 			English(UK)  हिन्  दीਪੰਜ  ਾਬੀار  دوગુજ  રાત  ીবাংল  াதம  ிழ்త  ెలుగ  ుമലയ  ാളംಕನ  ್ನಡ Español 
+ 			<input type="submit" value="+" id="plus">-->
+
+
+ 			<table width="70%">
+ 			<tr>
+ 				<td><a href="#" style="text-decoration:none; color:#3b5998"><font size="2px"> English(UK)</font></a></td>
+ 				<td><a href="#" style="text-decoration:none; color:#3b5998"><font size="2px">हिन्</font></a></td>
+ 				<td><a href="#" style="text-decoration:none; color:#3b5998"><font size="2px">दीਪੰਜ </font></a></td>
+ 				<td><a href="#" style="text-decoration:none; color:#3b5998"><font size="2px">ਾਬੀار</font></a></td>
+ 				<td><a href="#" style="text-decoration:none; color:#3b5998"><font size="2px">دوગુજ </font></a></td>
+ 				<td><a href="#" style="text-decoration:none; color:#3b5998"><font size="2px">રાત</font></a></td>
+ 				<td><a href="#" style="text-decoration:none; color:#3b5998"><font size="2px">ીবাংল</font></a></td>
+ 				<td><a href="#" style="text-decoration:none; color:#3b5998"><font size="2px">াதம</font></a></td>
+ 				<td><a href="#" style="text-decoration:none; color:#3b5998"><font size="2px">ிழ்త</font></a></td>
+ 				<td><a href="#" style="text-decoration:none; color:#3b5998"><font size="2px">ెలుగ</font></a></td>
+ 				<td><a href="#" style="text-decoration:none; color:#3b5998"><font size="2px">ుമലയ</font></a></td>
+ 				<td><a href="#" style="text-decoration:none; color:#3b5998"><font size="2px">ാളംಕನ</font></a></td>
+ 				<td><a href="#" style="text-decoration:none; color:#3b5998"><font size="2px">್ನಡ </font></a></td>
+ 				<td><a href="#" style="text-decoration:none; color:#3b5998"><font size="2px">Español </font></a></td>
+ 				<td><a href="#" style="text-decoration:none; color:#3b5998"><input type="submit" value="+" id="plus"> </a></td>
+ 			</tr>
+ 			</table>
+
+
+
+
+
+ 			<hr align="center" width="1200" size="1" color="#b3b3cc"/>
+
+ 			
+ 		</div>
+ 			
+ 			</font>
+ 		</div>
+
+ 		<div id="seven">
+ 			<div id="sevenright">
+ 				<font size="3px" color="grey">
+
+ 					<table width="90%">
+ 						<tr>
+ 						<td><a href="#" style="text-decoration:none; color:#3b5998"> <font size="2px"> Sign Up</font></a></td>
+ 						<td><a href="#" style="text-decoration:none; color:#3b5998"><font size="2px">Log In</font></a></td>
+ 						<td><a href="#" style="text-decoration:none; color:#3b5998"><font size="2px">Messenger </font></a></td>
+ 						<td><a href="#" style="text-decoration:none; color:#3b5998"><font size="2px">Facebook Lit</font></a></td>
+ 						<td><a href="#" style="text-decoration:none; color:#3b5998"><font size="2px">Mobile</font></a></td>
+ 						<td><a href="#" style="text-decoration:none; color:#3b5998"><font size="2px">Find Friends</font></a></td>
+ 						<td><a href="#" style="text-decoration:none; color:#3b5998"><font size="2px">People</font></a></td>
+ 						<td><a href="#" style="text-decoration:none; color:#3b5998"><font size="2px">Pages</font></a></td>
+ 						<td><a href="#" style="text-decoration:none; color:#3b5998"><font size="2px">Places</font></a></td>
+ 						<td><a href="#" style="text-decoration:none; color:#3b5998"><font size="2px">Games</font></a></td>
+ 						<td><a href="#" style="text-decoration:none; color:#3b5998"><font size="2px">Location</font></a></td>
+ 						</tr>
+ 						<tr>
+ 						<td><a href="#" style="text-decoration:none; color:#3b5998"><font size="2px">Celebrities</font></a></td>
+ 						<td><a href="#" style="text-decoration:none; color:#3b5998"><font size="2px">Marketplace</font></a></td>
+ 						<td><a href="#" style="text-decoration:none; color:#3b5998"><font size="2px">Groups </font></a></td>
+ 						<td><a href="#" style="text-decoration:none; color:#3b5998"><font size="2px">Recipes</font></a></td>
+ 						<td><a href="#" style="text-decoration:none; color:#3b5998"><font size="2px">Moments</font></a></td>
+ 						<td><a href="#" style="text-decoration:none; color:#3b5998"><font size="2px">Instagram</font></a></td>
+ 						<td><a href="#" style="text-decoration:none; color:#3b5998"><font size="2px">About</font></a></td>
+ 						<td><a href="#" style="text-decoration:none; color:#3b5998"><font size="2px">Create Advert</font></a></td>
+ 						<td><a href="#" style="text-decoration:none; color:#3b5998"><font size="2px">Create Page</font></a></td>
+ 						<td><a href="#" style="text-decoration:none; color:#3b5998"><font size="2px">Developers</font></a></td>
+ 						<td><a href="#" style="text-decoration:none; color:#3b5998"><font size="2px">Careers</font></a></td>
+ 						</tr>
+
+
+ 						<tr>
+ 						<td><a href="#" style="text-decoration:none; color:#3b5998"><font size="2px">Privacy</font></a></td>
+ 						<td><a href="#" style="text-decoration:none; color:#3b5998"><font size="2px">Cookies</font></a></td>
+ 						<td><a href="#" style="text-decoration:none; color:#3b5998"><font size="2px">AdChoices </font></a></td>
+ 						<td><a href="#" style="text-decoration:none; color:#3b5998"><font size="2px">RecipesTerms</font></a></td>
+ 						<td><a href="#" style="text-decoration:none; color:#3b5998"><font size="2px">Help</font></a></td>
+ 							
+ 						</tr>
+
+
+
+
+
+
+ 					</table>
+ 					<br/>
+ 					<br/>
+ 					<font size="2px">Facebook © 2017</font>
+
+
+
+
+ 					
+ 				</font>	
+
+
+
+
+
+
+
+
+
+ 		</div>
+ 	</div>	
+
+
+
+	</body>
+
+	</form>
+
+
+
+
+
+
+</body>
+</html>
